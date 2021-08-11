@@ -43,6 +43,9 @@ func main() {
 			temp = value
 			largeNumber = temp
 
+		} else {
+			temp = value
+			minimumNumber = temp
 		}
 	}
 
@@ -56,9 +59,8 @@ func main() {
 		}
 	}
 
-	
 	fmt.Println("minimum number", minimumNumber)
 
 }
 
-//alhamdulillahhhhhhhh
+
