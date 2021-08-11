@@ -43,10 +43,7 @@ func main() {
 			temp = value
 			largeNumber = temp
 
-		} else {
-			temp = value
-			minimumNumber = temp
-		}
+		} 
 	}
 
 	fmt.Println("maximum number", largeNumber)
