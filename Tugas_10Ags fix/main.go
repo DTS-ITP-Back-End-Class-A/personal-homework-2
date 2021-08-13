@@ -35,15 +35,15 @@ func main(){
 
 	//Proses perulangan dan percabangan untuk mencari nilai tertinggi dan terendah
 	var max float64 = daftar["Puti"]
-    min := daftar["Puti"] //ini adalah data untuk perbandingan, bisa pakai data yang mana saja.
-    for _, nilai := range daftar {
-        if max < nilai {
-            max = nilai //jadi nilai ini akan berubah sebanyak data yang ada, data tertinggi yang bertahan.
-        }
-        if min > nilai {
-            min = nilai //casenya sama dengan max namun data yang bertahan adalah data terendah.
-        }
-    }
+    	min := daftar["Puti"] //ini adalah data untuk perbandingan, bisa pakai data yang mana saja.
+    	for _, nilai := range daftar {
+		if max < nilai {
+	    		max = nilai //jadi nilai ini akan berubah sebanyak data yang ada, data tertinggi yang bertahan.
+		}
+		if min > nilai {
+	   		min = nilai //casenya sama dengan max namun data yang bertahan adalah data terendah.
+		}
+   	}
 
 	//cetak nilai tertinggi dan terendah.
 	fmt.Println("Nilai tertinggi: ", max)
