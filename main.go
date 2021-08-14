@@ -18,14 +18,15 @@ func getMaxMinAveNumber(student map[string]float64) {
 	var maxNum float64
 	var minNum float64
 	var sum float64
-	var namaSiswa string
+	var namaSiswaMax string
+	var namaSiswaMin string
 	for key, value := range student {
 		if value > maxNum {
 			maxNum = value
-			namaSiswa = key
+			namaSiswaMax = key
 		} else {
 			minNum = value
-			namaSiswa = key
+			namaSiswaMin = key
 		}
 
 		sum += value
@@ -33,9 +34,9 @@ func getMaxMinAveNumber(student map[string]float64) {
 	}
 	ave := sum / float64(len(student))
 
-	fmt.Println("Nilai Tertinggi Adalah ", maxNum, " yang diperoleh Oleh ", namaSiswa)
+	fmt.Println("Nilai Tertinggi Adalah ", maxNum, " yang diperoleh Oleh ", namaSiswaMax)
 	fmt.Println("Nilai rata-rata siswa adalah", ave)
-	fmt.Println("Nilai Terendah Adalah ", minNum, " yang diperoleh Oleh ", namaSiswa)
+	fmt.Println("Nilai Terendah Adalah ", minNum, " yang diperoleh Oleh ", namaSiswaMin)
 }
 
 // func averageNumber(student map[string]float64) {
